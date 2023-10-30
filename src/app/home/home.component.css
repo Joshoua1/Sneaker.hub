@@ -1,0 +1,101 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css');
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero section */
+.hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+/* Animations */
+.animate_animated {
+    animation-fill-mode: both;
+}
+
+.animate_fadeIn {
+    animation-name: fadeIn;
+}
+
+.animate_bounceInDown {
+    animation-name: bounceInDown;
+}
+
+/* Typing effect styles */
+.typing-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(23) 1s forwards, fadeIn 1s 6s forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Other section styles */
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.bg-blue-600 {
+    background-color: #2563eb;
+}
+
+.hover\:bg-blue-700:hover {
+    background-color: #1d4ed8;
+}
+
+.text-gray-400 {
+    color: #9ca3af;
+}
+
+.hover\:text-gray-600:hover {
+    color: #AF4B57;
+}
+
+.py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.mt-12 {
+    margin-top: 3rem;
+}
+
+/* Footer section */
+.footer {
+    background-color: #333;
+    color:#AF4B57;
+}

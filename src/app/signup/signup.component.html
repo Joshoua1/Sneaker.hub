@@ -1,0 +1,53 @@
+<body>
+    <header>
+        <div class="company-name">Sneakers.hub</div>
+        <nav>
+            <ul class="nav-right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2 class="center-align">Sign Up</h2>
+        <form action="home.html" method="post">
+            <table class="signup-table">
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="username" placeholder="Enter your username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td>
+                        <div class="password-input">
+                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                            <img src="hide.png" id="password-toggle" class="password-toggle" alt="Hide Password">
+                        </div>
+                        <div class="password-validation-error" id="password-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="confirm-password">Confirm Password:</label></td>
+                    <td><input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required></td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+    <footer>
+        <div class="social-media">
+            <a href="#"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    
+    <script src="signup.js"></script>
+ </body>
+ 
