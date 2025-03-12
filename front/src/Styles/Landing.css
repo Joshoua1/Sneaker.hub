@@ -1,0 +1,63 @@
+/* Tailwind CSS Styles for Landing Page */
+
+/* Header with Video Background */
+.header-container {
+    @apply relative h-screen flex items-center justify-center overflow-hidden;
+  }
+  
+  .header-video {
+    @apply absolute w-full h-full object-cover;
+  }
+  
+  .video-overlay {
+    @apply absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center;
+  }
+  
+  .header-text {
+    @apply text-6xl font-bold text-white mb-8;
+  }
+  
+  .nav-list {
+    @apply flex space-x-8;
+  }
+  
+  .nav-item {
+    @apply text-white text-lg font-semibold hover:text-gray-300 transition duration-300;
+  }
+  
+  .nav-link {
+    @apply no-underline;
+  }
+  
+  /* Products Section */
+  .product-section {
+    @apply py-16 px-8 bg-gray-100;
+  }
+  
+  .section-title {
+    @apply text-4xl font-bold text-center mb-12;
+  }
+  
+  .product-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  }
+  
+  .product-card {
+    @apply bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105;
+  }
+  
+  .product-image {
+    @apply w-full h-64 object-cover;
+  }
+  
+  .product-name {
+    @apply text-xl font-semibold mt-4 px-4;
+  }
+  
+  .product-price {
+    @apply text-lg text-gray-700 mt-2 px-4;
+  }
+  
+  .add-to-cart-button {
+    @apply w-full bg-black text-white py-2 mt-4 hover:bg-gray-800 transition duration-300;
+  }

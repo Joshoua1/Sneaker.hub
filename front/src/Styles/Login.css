@@ -1,0 +1,81 @@
+/* Login.css for Sneaker.hub - complementing Tailwind CSS */
+
+/* Import Tailwind directives if not already imported in a main CSS file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Login form specific styling */
+.login-container {
+  @apply min-h-screen flex items-center justify-center bg-gray-100;
+}
+
+.login-card {
+  @apply bg-white p-8 rounded-lg shadow-md w-full max-w-md;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.login-title {
+  @apply text-2xl font-bold text-center mb-6 text-gray-800;
+}
+
+.login-input {
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  transition: all 0.2s ease;
+}
+
+.login-input-label {
+  @apply block text-gray-700 text-sm font-bold mb-2;
+}
+
+.login-button {
+  @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50;
+  @apply w-full transition-colors duration-200;
+}
+
+.login-link {
+  @apply text-blue-600 hover:text-blue-800 transition-colors duration-200;
+}
+
+.back-link {
+  @apply text-sm text-gray-600 hover:text-gray-800 transition-colors duration-200;
+}
+
+/* Custom animation for login form appearance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add a subtle hover effect to the form */
+.login-card:hover {
+  @apply shadow-lg;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Password visibility toggle styling (if you want to add this feature) */
+.password-toggle {
+  @apply absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 cursor-pointer;
+}
+
+/* Error state styling */
+.input-error {
+  @apply border-red-500;
+}
+
+.error-message {
+  @apply text-red-500 text-xs italic mt-1;
+}
+
+/* Remember me checkbox styling */
+.remember-checkbox {
+  @apply h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded;
+}

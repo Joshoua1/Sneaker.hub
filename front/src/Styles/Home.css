@@ -1,0 +1,110 @@
+/* SneakerHub.css */
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css');
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero section */
+.hero {
+    background-image: url('../Assets/Images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+/* Animations */
+.animate_animated {
+    animation-fill-mode: both;
+}
+
+.animate_fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.animate_bounceInDown {
+    animation-name: bounceInDown;
+    animation-duration: 1s;
+}
+
+.animate_fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+}
+
+.animate_bounceIn {
+    animation-name: bounceIn;
+    animation-duration: 1s;
+}
+
+/* Typing effect styles */
+.typing-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(23) 1s forwards, fadeIn 1s 6s forwards;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounceInDown {
+    from, 60%, 75%, 90%, to { animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+    0% { opacity: 0; transform: translate3d(0, -3000px, 0); }
+    60% { opacity: 1; transform: translate3d(0, 25px, 0); }
+    75% { transform: translate3d(0, -10px, 0); }
+    90% { transform: translate3d(0, 5px, 0); }
+    to { transform: none; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translate3d(0, 100%, 0); }
+    to { opacity: 1; transform: none; }
+}
+
+@keyframes bounceIn {
+    from, 20%, 40%, 60%, 80%, to { animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); }
+    0% { opacity: 0; transform: scale3d(.3, .3, .3); }
+    20% { transform: scale3d(1.1, 1.1, 1.1); }
+    40% { transform: scale3d(.9, .9, .9); }
+    60% { opacity: 1; transform: scale3d(1.03, 1.03, 1.03); }
+    80% { transform: scale3d(.97, .97, .97); }
+    to { opacity: 1; transform: scale3d(1, 1, 1); }
+}
+
+/* Custom styles */
+.sneaker-card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sneaker-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sneaker-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
