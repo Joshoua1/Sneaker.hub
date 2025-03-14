@@ -2,7 +2,7 @@
 
 Sneaker.Hub is a comprehensive platform for sneaker enthusiasts to explore, discover, and stay updated on the latest sneaker releases, prices, and trends. Our application leverages the Sneaks API to provide real-time data from major sneaker marketplaces.
 
-![Sneaker.Hub Logo](front\public\favicon.ico)
+![Sneaker.Hub Logo](src/Assets/Images/logo.svg)
 
 ## Features
 
